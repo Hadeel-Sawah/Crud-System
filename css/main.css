@@ -1,0 +1,35 @@
+body{
+    overflow-x:hidden ;
+}
+.crud{
+    background-image: url('../img/pexels-henry-&-co-1939485.jpg');
+    background-size: cover;
+}
+.layer{
+    background-color: rgba(0, 0,0,.7);
+}
+*,btn-info{
+    font-style: italic;
+    color: #e8e8f1 !important;
+}
+label{
+    padding: 10px 0 5px ;
+}
+label,thead{
+    font-size: 1.2rem; 
+}
+input{
+    padding: 10px !important;
+}
+.form-control{
+    background-color: transparent;
+    color: #f6f7f8 !important;
+    border: 1px solid #ceced152;
+}
+.form-control:hover,.form-control:focus{
+    background-color: #ceced11f;
+    border: 1px solid #ceced152;
+}
+#search,.form-control{
+   font-size: 1.1rem;
+}
