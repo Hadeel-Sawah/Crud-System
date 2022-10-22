@@ -1,16 +1,19 @@
+:root{
+    --main-color:#e8e8f1;
+}
 body{
     overflow-x:hidden ;
+    color:rgb(232, 232, 241);
 }
 .crud{
-    background-image: url('../img/pexels-henry-&-co-1939485.jpg');
-    background-size: cover;
+    background-image: url('../img/pexels-photo-534216.jpeg');
 }
 .layer{
-    background-color: rgba(0, 0,0,.7);
+    background-color: rgba(0, 0, 0, .9331111);
 }
 *,btn-info{
     font-style: italic;
-    color: #e8e8f1 !important;
+    color:var(--main-color) !important;
 }
 label{
     padding: 10px 0 5px ;
@@ -23,7 +26,7 @@ input{
 }
 .form-control{
     background-color: transparent;
-    color: #f6f7f8 !important;
+    color: var(--main-color) !important;
     border: 1px solid #ceced152;
 }
 .form-control:hover,.form-control:focus{
@@ -32,4 +35,8 @@ input{
 }
 #search,.form-control{
    font-size: 1.1rem;
+}
+.lighting i{
+    right: 2rem;
+    top: 1rem;
 }

@@ -45,8 +45,12 @@ if(JSON.parse(localStorage.getItem('dataList'))!= null){
      <td> ${ products[i].price}</td>  
      <td> ${ products[i].category}</td>  
      <td> ${ products[i].desc}</td>  
-     <td> <button class="btn btn-outline-warning" onclick ='getdata(${i})'>Update</button></td>
-     <td> <button class="btn btn-outline-danger" onclick ='deletedata(${i})'>Delete</button></td>
+     <td> <button class="btn" onclick ='getdata(${i})'>
+     <i class="fa-solid fa-pencil fs-4"></i>
+     </button></td>
+     <td> <button class="btn" onclick ='deletedata(${i})'>
+     <i class="fa-regular fa-trash-can fs-4"></i>
+     </button></td>
      </tr>`
     }
     document.getElementById("tableBody").innerHTML=rowsTable;
@@ -71,8 +75,12 @@ if(JSON.parse(localStorage.getItem('dataList'))!= null){
                 `<span class="text-info">${searchTxt}</span>`)}
             </td>  
             <td> ${products[i].desc}</td>  
-            <td> <button class="btn btn-outline-warning" onclick ='getdata(${i})'>Update</button></td>
-            <td> <button class="btn btn-outline-danger" onclick ='deletedata(${i})'>Delete</button></td>
+            <td> <button class="btn" onclick ='getdata(${i})'>
+            <i class="fa-solid fa-pencil fs-4"></i>
+            </button></td>
+            <td> <button class="btn" onclick ='deletedata(${i})'>
+            <i class="fa-regular fa-trash-can fs-4"></i>
+            </button></td>
             </tr>`
         }
     }
@@ -125,4 +133,4 @@ productPriceInput.onkeyup = function (){
      } else {
         productPriceInput.classList.add('is-invalid');
      }
-}
+};
